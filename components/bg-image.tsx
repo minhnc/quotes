@@ -16,7 +16,7 @@ export default function BackGroundImage({ url, alt, info }: BackGroundImageProps
                 src={url}
                 alt={alt}
                 radius="none"
-                // className="h-auto max-w-full"
+                loading="lazy"
                 className="fixed top-0 left-0 right-0 w-full h-full"
             />
             <PhotoInfo info={info} />

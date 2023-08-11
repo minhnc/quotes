@@ -1,15 +1,54 @@
 import QuoteCard from "@/components/quote-card";
 import BackGroundImage from "@/components/bg-image";
 
-export default function Home() {
-	const quote = 'Make beautiful websites regardless of your design experience.'
-	const author = 'Author Name'
-	const url = 'https://images.unsplash.com/photo-1488137881216-5bea4b9bac2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzODM2NzR8MHwxfGFsbHx8fHx8fHx8fDE2OTE2NTk2MTd8&ixlib=rb-4.0.3&q=80&w=1080'
+type Photo = {
+	urls: Record<'raw' | 'full' | 'regular', string>
+	alt_description: string
+	location: {
+		name?: string
+	}
+}
+
+async function getPhoto(): Promise<Photo> {
+	const res = await fetch('https://api.unsplash.com/photos/random?orientation=landscape&query=nature', {
+		headers: {
+			Authorization: `Client-ID ${process.env.UNSPLASH_KEY}`
+		},
+		next: { revalidate: 5 * 60 }
+	})
+
+	if (!res.ok) {
+		throw new Error('Failed to fetch photo')
+	}
+
+	return res.json() as Promise<Photo>
+}
+
+type Quote = {
+	quote: string
+	author: string
+}
+
+async function getQuote(): Promise<Quote> {
+	const res = await fetch('https://dummyjson.com/quotes/random', {
+		cache: 'no-cache'
+	})
+
+	if (!res.ok) {
+		throw new Error('Failed to fetch quote')
+	}
+
+	return res.json() as Promise<Quote>
+}
+
+export default async function Home() {
+	const photo = await getPhoto()
+	const quote = await getQuote()
 
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<BackGroundImage url={url} alt="..." info="Photo on Unsplash" />
-			<QuoteCard quote={quote} author={author} />
+			<BackGroundImage url={photo.urls.raw} alt={photo.alt_description} info={photo.location.name ?? 'Photo on Unsplash'} />
+			<QuoteCard quote={quote.quote} author={quote.author} />
 		</section >
 	);
 }
