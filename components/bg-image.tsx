@@ -2,9 +2,9 @@ import { Image } from "@nextui-org/image";
 import PhotoInfo from "./photo-info";
 
 type BackGroundImageProps = {
-    url: string
-    alt: string
-    info: string
+    url: string,
+    alt: string,
+    info: string,
 }
 
 export default function BackGroundImage({ url, alt, info }: BackGroundImageProps) {
