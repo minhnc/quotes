@@ -2,6 +2,7 @@ import NextLink from "next/link";
 import { Link } from "@nextui-org/link";
 import { AnchorIcon } from "@/components/icons";
 import { title } from "@/components/primitives";
+import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 
 const messages = [
 	{
@@ -20,15 +21,15 @@ const messages = [
 
 export default async function Home() {
 	return (
-		<div className="mx-auto max-w-2xl px-4">
-			<div className="rounded-lg border bg-background p-8">
-				<h1 className={title({ size: "sm" })}>
-					Welcome to {' '}
-					<span className={title({ color: "violet", size: "sm" })}>
-						Inspirational Quotes!
-					</span>
-				</h1>
-				<p className="my-2 leading-normal text-muted-foreground">
+		<Card className="border-none bg-background/60 dark:bg-default-100/50 max-w-[80%] p-4">
+			<CardHeader className={title({ size: "sm" })}>
+				Welcome to {' '}
+				<span className={title({ color: "violet", size: "sm" })}>
+					Inspirational Quotes!
+				</span>
+			</CardHeader>
+			<CardBody>
+				<p className="leading-normal">
 					This is an open source quote app built with{' '}
 					<Link
 						isExternal
@@ -47,7 +48,7 @@ export default async function Home() {
 					</Link>
 					.
 				</p>
-				<p className="leading-normal text-muted-foreground">
+				<p className="leading-normal">
 					You can explore different data fetching techniques in this {' '}
 					<Link
 						isExternal
@@ -58,10 +59,12 @@ export default async function Home() {
 					</Link>
 					.
 				</p>
-				<p className="mt-6 leading-normal text-muted-foreground">
-					And click on one of below links to see beautiful quotes:
+				<p className="mt-6 leading-normal">
+					Click on one of below links to see beautiful quotes:
 				</p>
-				<div className="mt-4 flex flex-col items-start space-y-2">
+			</CardBody>
+			<CardFooter>
+				<div className="flex flex-col px-4">
 					{messages.map((message, index) => (
 						<Link
 							key={index}
@@ -77,7 +80,7 @@ export default async function Home() {
 
 					))}
 				</div>
-			</div>
-		</div>
+			</CardFooter>
+		</Card>
 	);
 }
