@@ -7,15 +7,15 @@ import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 const messages = [
 	{
 		heading: 'Preloading Data',
-		link: '/preload',
+		link: '/patterns/preload',
 	},
 	{
 		heading: 'Parallel Data Fetching',
-		link: '/parallel',
+		link: '/patterns/parallel',
 	},
 	{
 		heading: 'Sequential Data Fetching',
-		link: '/sequential',
+		link: '/patterns/sequential',
 	}
 ]
 
