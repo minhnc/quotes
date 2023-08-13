@@ -375,20 +375,20 @@
     "@nextui-org/theme" "2.0.0"
     "@react-aria/utils" "^3.18.0"
 
-"@nextui-org/link@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@nextui-org/link/-/link-2.0.0.tgz#8749685c06b31929a7ad7739b48cd05b48c14f1f"
-  integrity sha512-srjSBHl0COFAyqjaeopoNu17Hp0GowEbrsEKtRhSKOFql+JYcdsoYELWWrOmUknNpdw3LuJK10o29tIixYgtKA==
+"@nextui-org/link@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@nextui-org/link/-/link-2.0.10.tgz#b2a5fdad3b6ffa597c5d60753be4d3d54834d4b6"
+  integrity sha512-v/TOsRS9kAcFkOY6lpq/EJ/WYgEFJd6xUlqfufcCiqo4B/ycrx5K39/ZKtqo96kndzBZDB9szoJY4uvCO8/7/A==
   dependencies:
-    "@nextui-org/react-utils" "2.0.0"
-    "@nextui-org/shared-icons" "2.0.0"
-    "@nextui-org/shared-utils" "2.0.0"
-    "@nextui-org/system" "2.0.0"
-    "@nextui-org/theme" "2.0.0"
-    "@react-aria/focus" "^3.13.0"
-    "@react-aria/link" "^3.5.2"
-    "@react-aria/utils" "^3.18.0"
-    "@react-types/link" "^3.4.3"
+    "@nextui-org/react-utils" "2.0.5"
+    "@nextui-org/shared-icons" "2.0.2"
+    "@nextui-org/shared-utils" "2.0.2"
+    "@nextui-org/system" "2.0.5"
+    "@nextui-org/theme" "2.0.5"
+    "@react-aria/focus" "^3.14.0"
+    "@react-aria/link" "^3.5.3"
+    "@react-aria/utils" "^3.19.0"
+    "@react-types/link" "^3.4.4"
 
 "@nextui-org/navbar@2.0.0":
   version "2.0.0"
@@ -469,6 +469,11 @@
   resolved "https://registry.yarnpkg.com/@nextui-org/shared-icons/-/shared-icons-2.0.0.tgz#94840a538fdc4874da9e52c02a4784536e041e02"
   integrity sha512-0yc8ZO0Jx3xwqtQm1PMYzJD92ia5jOxkbmij8/+6/DeFbLj+jXcr23zTSHJvi2LIhzhGzF5E8PRbWBOoCzZ9aw==
 
+"@nextui-org/shared-icons@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@nextui-org/shared-icons/-/shared-icons-2.0.2.tgz#1c7405d663d2ab77f2f80534e3f7cfc54f9fe9d6"
+  integrity sha512-TtGFRY4ihRg8HuaFmwIx83LgCZ5bf2FOs407v23Bb0RDrum+3qZOeuClC8bcvivWZz/KUz9ZugGJdGYYSkMcbA==
+
 "@nextui-org/shared-utils@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@nextui-org/shared-utils/-/shared-utils-2.0.0.tgz#47853e3514e8eb924e62cd98f419db554170c685"
@@ -524,6 +529,16 @@
     "@nextui-org/shared-utils" "2.0.2"
     "@nextui-org/system-rsc" "2.0.3"
     "@nextui-org/theme" "2.0.4"
+
+"@nextui-org/spinner@^2.0.8":
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@nextui-org/spinner/-/spinner-2.0.8.tgz#b36168a99bab4ff7a73b36193845bcd6f70a23e0"
+  integrity sha512-w3eR4T1/6jQlQJHhE66VdG1dwNNcAmeH/Ql72aX6RIRT7v1Gwg9gugVal2Pxw3Yg/cU1R1JTV8O+qnNJoTRdKg==
+  dependencies:
+    "@nextui-org/react-utils" "2.0.5"
+    "@nextui-org/shared-utils" "2.0.2"
+    "@nextui-org/system-rsc" "2.0.3"
+    "@nextui-org/theme" "2.0.5"
 
 "@nextui-org/switch@2.0.0":
   version "2.0.0"
@@ -591,6 +606,23 @@
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@nextui-org/theme/-/theme-2.0.4.tgz#80fc50dbb918b830e348f89340b4382d849dc634"
   integrity sha512-hTOMnvb58FnlRG27S6w7ruIdflZs0D9gVaUOxf9ct8YPHr4ZEzgURi6z5ir9V9ZOP/r3Yi6PqqROzJ708TIvgg==
+  dependencies:
+    color "^4.2.3"
+    color2k "^2.0.2"
+    deepmerge "4.3.1"
+    flat "^5.0.2"
+    lodash.foreach "^4.5.0"
+    lodash.get "^4.4.2"
+    lodash.kebabcase "^4.1.1"
+    lodash.mapkeys "^4.6.0"
+    lodash.omit "^4.5.0"
+    tailwind-variants "^0.1.13"
+    tailwindcss "^3.2.7"
+
+"@nextui-org/theme@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@nextui-org/theme/-/theme-2.0.5.tgz#5446158e3bab58cdac56c66b3af0f5e233d2179e"
+  integrity sha512-4br6xRTYGbDCL8Vwm4CP0VqEXORROyQCmLSwNFaXr6s0vB5nX5tnJHqyDIvpq5Al7I2H8HMG2KOUHyhbaKOKFA==
   dependencies:
     color "^4.2.3"
     color2k "^2.0.2"
@@ -757,7 +789,7 @@
     "@react-types/shared" "^3.19.0"
     "@swc/helpers" "^0.5.0"
 
-"@react-aria/link@^3.5.2":
+"@react-aria/link@^3.5.3":
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/@react-aria/link/-/link-3.5.3.tgz#9545af2087ec9fb3549be711c57b3c0bf9fb42ea"
   integrity sha512-WGz/s/czlb/+wJUnBfnfaRuvOSiNTaQDTk9QsEEwrTkkYbWo7fMlH5Tc7c0Uxem4UuUblYXKth5SskiKQNWc0w==
@@ -929,7 +961,7 @@
   dependencies:
     "@react-types/shared" "^3.19.0"
 
-"@react-types/link@^3.4.3", "@react-types/link@^3.4.4":
+"@react-types/link@^3.4.4":
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/@react-types/link/-/link-3.4.4.tgz#0e430ce0fdebff2bbc337b237766e6d584daaae6"
   integrity sha512-/FnKf7W6nCNZ2E96Yo1gaX63eSxERmtovQbkRRdsgPLfgRcqzQIVzQtNJThIbVNncOnAw3qvIyhrS0weUTFacQ==

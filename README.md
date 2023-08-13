@@ -1,6 +1,8 @@
-# Next.js & NextUI Template
+# Beautiful app built with Next.js & NextUI
 
-This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
+This is a quote app based on freeCodeCamp’s [Quote Machine](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine) challenge.
+
+It's designed to brighten your day with inspirational quotes and stunning images from Unsplash.
 
 ## Technologies Used
 
@@ -11,28 +13,29 @@ This is a template for creating applications using Next.js 13 (app directory) an
 - [TypeScript](https://www.typescriptlang.org/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [next-themes](https://github.com/pacocoursey/next-themes)
+- [Photos from Unsplash](https://unsplash.com)
+- [Inspirational Quotes API](https://dummyjson.com/quotes)
 
 ## How to Use
 
 
-### Use the template with create-next-app
+### Live Demo
 
-To create a new project based on this template using `create-next-app`, run the following command:
+[https://zen-quotes.vercel.app](https://zen-quotes.vercel.app/)
+### Technical blog to explore different data fetching techniques in NextJS
 
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
-```
+[https://dev.to/minhnc](https://dev.to/minhnc)
 
 ### Install dependencies
 
 ```bash
-npm install
+yarn install
 ```
 
 ### Run the development server
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## License

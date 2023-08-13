@@ -1,7 +1,7 @@
-import QuoteCardSkeleton from "@/components/quote-card-skeleton";
+import { Spinner } from "@nextui-org/spinner";
 
 export default function Loading() {
     return (
-        <QuoteCardSkeleton />
+        <Spinner color="secondary" />
     )
 }
