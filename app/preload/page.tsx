@@ -1,6 +1,11 @@
+import { Suspense } from "react";
+
+import { getPhoto, getQuote } from "@/lib/api";
+
 import QuoteCard from "@/components/quote-card";
 import BackgroundImage from "@/components/bg-image";
-import { getPhoto, getQuote } from "@/lib/api";
+import QuoteCardSkeleton from "@/components/quote-card-skeleton";
+
 
 export default async function Preloading() {
 	getPhoto()
@@ -8,8 +13,13 @@ export default async function Preloading() {
 
 	return (
 		<>
+			{/* @ts-expect-error Server Component */}
 			<BackgroundImageContainer />
-			<QuoteCardContainer />
+
+			<Suspense fallback={<QuoteCardSkeleton />}>
+				{/* @ts-expect-error Server Component */}
+				<QuoteCardContainer />
+			</Suspense>
 		</>
 	);
 }
@@ -33,3 +43,5 @@ const QuoteCardContainer = async () => {
 		<QuoteCard quote={quote.quote} author={quote.author} />
 	)
 }
+
+

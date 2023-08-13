@@ -415,6 +415,11 @@
   resolved "https://registry.yarnpkg.com/@nextui-org/react-rsc-utils/-/react-rsc-utils-2.0.4.tgz#15f24e306548960bbefab24ad61f264ae98041ae"
   integrity sha512-LeHsh9Wf+AVk40empH0I14KPyZ8FhyUpQR4FzNmvTWZK5uXBmvgsbmGPtErferSKGTUliYHaTa9BeizTjRKcyg==
 
+"@nextui-org/react-rsc-utils@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@nextui-org/react-rsc-utils/-/react-rsc-utils-2.0.5.tgz#c587bf0524a5de9e634f59eb352ffb055927c40b"
+  integrity sha512-hYGZ6vgyF1QhatU1E3BhhOy/sOrw5D813lXD/bQ+YkSAS5eRhhWFgpka+PLiZGq8GWAyXKfsOuRucdoGSo4g1w==
+
 "@nextui-org/react-utils@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@nextui-org/react-utils/-/react-utils-2.0.0.tgz#2dd392562e7ec77439c66fb9ee45e30456674edf"
@@ -429,6 +434,14 @@
   integrity sha512-Dwdv3CE9N8nrzL7Nqd7vO8kOjTha7aNIzRyt9FR5/Mgo8LSO8xi0srvoRT9sq5PufAmsav5Gmrarx902fE2KcA==
   dependencies:
     "@nextui-org/react-rsc-utils" "2.0.4"
+    "@nextui-org/shared-utils" "2.0.2"
+
+"@nextui-org/react-utils@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@nextui-org/react-utils/-/react-utils-2.0.5.tgz#87d90195d1bc2ed94a9e2d5d40fa96dc561bdf3e"
+  integrity sha512-Lh9hTBdbHLgBx7adWBLPSeKbQmN92fl/k1pvjw/CiCjW4nqTjjzxsNEjseGnMv6qwOk0nczlJ5lzKrHwnjNKQQ==
+  dependencies:
+    "@nextui-org/react-rsc-utils" "2.0.5"
     "@nextui-org/shared-utils" "2.0.2"
 
 "@nextui-org/ripple@2.0.0":
@@ -465,6 +478,16 @@
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@nextui-org/shared-utils/-/shared-utils-2.0.2.tgz#4fdb405c0a13749965cdbf9937c5a828daaf7942"
   integrity sha512-tqWVoJtxYbd/hd/laHE85GaXP+b3HeE1tXYjnObbwM+JIh4uu2/Do7Av7mzzyXwS7sZvyHxhi3zW12oank2ykA==
+
+"@nextui-org/skeleton@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@nextui-org/skeleton/-/skeleton-2.0.7.tgz#bb689e69cf8e5d2a52fccb0c0fabaeebf05dbe9b"
+  integrity sha512-xW73UUTfBrzfUEEz02VRmWYlOcE0mvh0XDPYtiHX6gmXR03cQwBm6GQK9imtRNyR4t/EtR63H+nP3p0OwQLB0A==
+  dependencies:
+    "@nextui-org/react-utils" "2.0.5"
+    "@nextui-org/shared-utils" "2.0.2"
+    "@nextui-org/system-rsc" "2.0.3"
+    "@nextui-org/theme" "2.0.4"
 
 "@nextui-org/snippet@2.0.0":
   version "2.0.0"
