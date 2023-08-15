@@ -24,7 +24,7 @@ It's designed to brighten your day with inspirational quotes and stunning images
 [https://zen-quotes.vercel.app](https://zen-quotes.vercel.app/)
 ### Technical blog to explore different data fetching techniques in NextJS
 
-[https://dev.to/minhnc](https://dev.to/minhnc)
+[https://dev.to/minhnc](https://dev.to/minhnc/data-fetching-in-nextjs-4ee6)
 
 ### Install dependencies
 

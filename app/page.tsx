@@ -49,10 +49,10 @@ export default async function Home() {
 					.
 				</p>
 				<p className="leading-normal">
-					You can explore different data fetching techniques in this {' '}
+					You can delve deeper into the techniques discussed in this {' '}
 					<Link
 						isExternal
-						href="https://dev.to/minhnc"
+						href="https://dev.to/minhnc/data-fetching-in-nextjs-4ee6"
 						showAnchorIcon
 					>
 						blog
